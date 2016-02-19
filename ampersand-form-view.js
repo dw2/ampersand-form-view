@@ -1,5 +1,6 @@
 /*$AMPERSAND_VERSION*/
 var Events = require('ampersand-events');
+var set = require('lodash.set');
 var isFunction = require('lodash.isfunction');
 var assign = require('lodash.assign');
 var result = require('lodash.result');
@@ -119,7 +120,13 @@ assign(FormView.prototype, Events, {
     getData: function () {
         var res = {};
         for (var key in this._fieldViews) {
-            res[key] = this._fieldViews[key].value;
+            if (this._fieldViews.hasOwnProperty(key)) {
+                if (key.match(/\[\]$/)) {
+                    res[key] = this._fieldViews[key].value;
+                } else {
+                    set(res, key, this._fieldViews[key].value);
+                }
+            }
         }
         return this.clean(res);
     },
