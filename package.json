@@ -1,8 +1,8 @@
 {
-  "name": "ampersand-form-view",
+  "name": "@dw2/ampersand-form-view",
   "description": "Completely customizable form lib for bulletproof clientside forms.",
-  "version": "3.1.1",
-  "author": "Henrik Joreteg <henrik@andyet.net>",
+  "version": "3.1.3",
+  "author": "Henrik Joreteg <henrik@andyet.net>, Douglas Waltman <doug@dougwaltman.com>",
   "files": [
     "ampersand-form-view.js"
   ],
@@ -12,7 +12,7 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/ampersandjs/ampersand-form-view/issues"
+    "url": "https://github.com/dw2/ampersand-form-view/issues"
   },
   "dependencies": {
     "ampersand-class-extend": "^1.0.2",
@@ -36,7 +36,7 @@
     "tape": "^3.0.3",
     "tape-run": "^0.3.0"
   },
-  "homepage": "https://github.com/ampersandjs/ampersand-form-view",
+  "homepage": "https://github.com/dw2/ampersand-form-view",
   "keywords": [
     "forms",
     "ampersand",
@@ -46,7 +46,7 @@
   "main": "ampersand-form-view.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ampersandjs/ampersand-form-view"
+    "url": "git://github.com/dw2/ampersand-form-view"
   },
   "scripts": {
     "lint": "jshint .",
